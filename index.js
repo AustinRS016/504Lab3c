@@ -79,9 +79,9 @@ function createFormPopup() {
         '<form>'+
         'Address:<br><input type="text" id="address"><br>'+
         'User\'s Name:<br><input type="text" id="input_name"><br>'+
-        'Did you drive on gravel?<br><input type="string" id="gravel"><br>'+
+        'Did you drive on gravel?<br><input type="checkbox" id="gravel"><br>'+
         'Tip:<br><input type="number" id="tip"><br>'+
-        'Was the google pin on the house?<br><input type="string" id="google_loc"><br>'+
+        'Was the google pin on the house?<br><input type="checkbox" id="google_loc"><br>'+
         'Rate the walk to the house from the car out of 3 (1 = shorter, 3 = longer):<br><input type="string" id="walk"><br>'+
         'Additional notes:<br><input type="string" id="notes"><br>'+
         '<input type="button" value="Submit" id="submit">'+
@@ -100,9 +100,9 @@ function setData(e) {
         // Get user name and description
         var enteredUsername = document.getElementById("input_name").value;
         var address = document.getElementById("address").value;
-        var gravel = document.getElementById("gravel").value;
+        var gravel = document.getElementById("gravel").checked;
         var tip = document.getElementById("tip").value;
-        var google_loc = document.getElementById("google_loc").value;
+        var google_loc = document.getElementById("google_loc").checked;
         var walk = document.getElementById("walk").value;
         var notes = document.getElementById("notes").value;
 
